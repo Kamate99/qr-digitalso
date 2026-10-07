@@ -1,0 +1,362 @@
+#logo {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+h1{
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+h1 span{
+    color: #ffb000;
+}
+.police{
+    font-family: 'Poppins', sans-serif;
+    color: #1d3557;
+}
+.police1{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+hr {
+    height: 3px;
+    background-color: #ffb000;
+    border: none;
+    width: 4%;
+    margin: auto;
+}
+.survol {
+    width: 600px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+@media (max-width: 900px) {
+    .survol {
+        width: calc(100vw - 30px);
+        max-width: 600px;
+    }
+}
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+.police p{
+    margin-bottom: 15px;
+}
+.police hr{
+    margin-bottom: 15px;
+}
+.btn-tiktok{
+    background-color: #000000;
+}
+.btn-tiktok:hover,
+.btn-tiktok:focus,
+.btn-tiktok:active {
+    background-color: #1d3557 !important;
+    color: white !important;
+}
+.btn-facebook{
+    background-color: #1877F2;
+}
+.btn-facebook:hover,
+.btn-facebook:focus,
+.btn-facebook:active {
+    background-color: #1d3557 !important;
+    color: white !important;
+}
+.btn-instagram {
+        background: linear-gradient(
+        45deg,
+        #FCAF45,
+        #F77737,
+        #E1306C,
+        #C13584,
+        #833AB4
+    );
+}
+.btn-instagram:hover,
+.btn-instagram:focus,
+.btn-instagram:active {
+    background: #1d3557 !important;
+    color: white !important;
+}
+
+.btn-whatsapp {
+    background-color: #25D366;
+}
+.btn-whatsapp:hover,
+.btn-whatsapp:focus,
+.btn-whatsapp:active {
+    background-color: #1d3557;
+    color: white;
+}
+.btn-email {
+    background-color: #E8E8E8;
+}
+.btn-email:hover,
+.btn-email:focus,
+.btn-email:active {
+    background-color: #1d3557;
+    color: #000000;
+}
+.btn-email:hover .blanc1,
+.btn-email:focus .blanc1,
+.btn-email:active .blanc1 {
+    color: white;
+}
+.blanc{
+    color: white;
+}
+.blanc1{
+    color: #000000;
+}
+.flècheCouleur{
+    color: white;
+}
+.flècheCouleur2{
+    color: black;
+}
+
+body {
+    background: #f7faff;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* GRANDES FORMES */
+
+html,
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+body {
+    position: relative;
+}
+
+/* Forme haut gauche */
+/* =========================
+   FORMES — TAILLE NORMALE
+   ========================= */
+
+body::before {
+    content: "";
+    position: fixed;
+
+    width: 40vw;
+    height: 30vw;
+
+    top: -17vw;
+    left: -15vw;
+
+    background: linear-gradient(
+        135deg,
+        #3155e7,
+        #6677f5
+    );
+
+    border-radius: 0 0 70% 0;
+    z-index: -1;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+
+    width: 43vw;
+    height: 31vw;
+
+    bottom: -19vw;
+    right: -15vw;
+
+    background: linear-gradient(
+        135deg,
+        #7a82ff,
+        #5144e8
+    );
+
+    border-radius: 70% 0 0 0;
+    z-index: -1;
+}
+
+
+/* =========================
+   RÉDUCTION À PARTIR DE 1149px
+   ========================= */
+
+@media (max-width: 1149px) {
+
+    body::before {
+        width: 459.6px;
+        height: 344.7px;
+
+        top: -195.3px;
+        left: -172.35px;
+
+        transform: scaleX(
+            clamp(0.40, calc(100vw / 1149px), 1)
+        );
+
+        transform-origin: left center;
+    }
+
+    body::after {
+        width: 494.07px;
+        height: 356.19px;
+
+        bottom: -218.31px;
+        right: -172.35px;
+
+        transform: scaleX(
+            clamp(0.40, calc(100vw / 1149px), 1)
+        );
+
+        transform-origin: right center;
+    }
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* PETITES BULLES */
+
+.background-bubbles {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.bubble {
+    position: absolute;
+    border-radius: 50%;
+
+    background: rgba(122, 130, 255, 0.13);
+
+    border: 1px solid rgba(102, 91, 230, 0.22);
+
+    box-shadow:
+        inset 3px 3px 8px rgba(255, 255, 255, 0.65),
+        2px 4px 14px rgba(81, 68, 232, 0.12);
+}
+
+
+/* BULLE 1 — HAUT DROITE */
+
+.bubble-1 {
+    width: 50px;
+    height: 50px;
+    top: 12%;
+    right: 13%;
+}
+
+
+/* BULLE 2 — GAUCHE */
+
+.bubble-2 {
+    width: 26px;
+    height: 26px;
+    top: 35%;
+    left: 8%;
+
+    background: rgba(122, 130, 255, 0.16);
+    border-color: rgba(81, 68, 232, 0.25);
+}
+
+
+/* BULLE 3 — CENTRALE */
+
+.bubble-3 {
+    width: 75px;
+    height: 75px;
+    top: 48%;
+    right: 7%;
+
+    background: rgba(102, 119, 245, 0.13);
+    border-color: rgba(102, 91, 230, 0.20);
+}
+
+
+/* BULLE 4 — BAS GAUCHE */
+
+.bubble-4 {
+    width: 36px;
+    height: 36px;
+    bottom: 17%;
+    left: 12%;
+
+    background: rgba(122, 130, 255, 0.15);
+    border-color: rgba(81, 68, 232, 0.23);
+}
+
+
+/* BULLE 5 — BAS DROITE */
+
+.bubble-5 {
+    width: 21px;
+    height: 21px;
+    bottom: 11%;
+    right: 23%;
+}
+
+
+/* NOUVELLES BULLES */
+
+/* Bulle bleu clair — haut gauche */
+.bubble-6 {
+    width: 30px;
+    height: 30px;
+    top: 20%;
+    left: 24%;
+
+    background: rgba(49, 85, 231, 0.11);
+    border-color: rgba(49, 85, 231, 0.20);
+
+    box-shadow:
+        inset 3px 3px 8px rgba(255, 255, 255, 0.70),
+        2px 4px 14px rgba(49, 85, 231, 0.10);
+}
+
+
+/* Bulle lavande — milieu gauche */
+.bubble-7 {
+    width: 42px;
+    height: 42px;
+    top: 62%;
+    left: 5%;
+
+    background: rgba(102, 119, 245, 0.10);
+    border-color: rgba(102, 119, 245, 0.20);
+
+    box-shadow:
+        inset 3px 3px 8px rgba(255, 255, 255, 0.70),
+        2px 4px 14px rgba(102, 119, 245, 0.10);
+}
+
+
+/* Petite bulle bleu-violet — haut droite */
+.bubble-8 {
+    width: 24px;
+    height: 24px;
+    top: 27%;
+    right: 27%;
+
+    background: rgba(81, 68, 232, 0.12);
+    border-color: rgba(81, 68, 232, 0.22);
+
+    box-shadow:
+        inset 3px 3px 8px rgba(255, 255, 255, 0.70),
+        2px 4px 14px rgba(81, 68, 232, 0.10);
+}

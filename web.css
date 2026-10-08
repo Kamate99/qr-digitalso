@@ -144,16 +144,13 @@ body {
 }
 
 /* Forme haut gauche */
-/* =========================
-   FORMES — TAILLE NORMALE
-   ========================= */
 
 body::before {
     content: "";
     position: fixed;
 
-    width: 40vw;
-    height: 30vw;
+    width: clamp(180px, 40vw, 520px);
+    height: clamp(135px, 30vw, 390px);
 
     top: -17vw;
     left: -15vw;
@@ -168,12 +165,13 @@ body::before {
     z-index: -1;
 }
 
+
 body::after {
     content: "";
     position: fixed;
 
-    width: 43vw;
-    height: 31vw;
+    width: clamp(190px, 43vw, 555px);
+    height: clamp(140px, 31vw, 400px);
 
     bottom: -19vw;
     right: -15vw;
@@ -188,41 +186,6 @@ body::after {
     z-index: -1;
 }
 
-
-/* =========================
-   RÉDUCTION À PARTIR DE 1149px
-   ========================= */
-
-@media (max-width: 1149px) {
-
-    body::before {
-        width: 459.6px;
-        height: 344.7px;
-
-        top: -195.3px;
-        left: -172.35px;
-
-        transform: scaleX(
-            clamp(0.40, calc(100vw / 1149px), 1)
-        );
-
-        transform-origin: left center;
-    }
-
-    body::after {
-        width: 494.07px;
-        height: 356.19px;
-
-        bottom: -218.31px;
-        right: -172.35px;
-
-        transform: scaleX(
-            clamp(0.40, calc(100vw / 1149px), 1)
-        );
-
-        transform-origin: right center;
-    }
-}
 
 .container {
     position: relative;

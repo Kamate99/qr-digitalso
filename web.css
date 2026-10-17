@@ -1,8 +1,9 @@
 #logo {
-    width: 150px;
-    height: 150px;
-    object-fit: contain;
+width: 300px;
+height: auto;
+object-fit: contain;
 }
+/*
 h1{
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
@@ -10,6 +11,7 @@ h1{
 h1 span{
     color: #ffb000;
 }
+*/
 .police{
     font-family: 'Poppins', sans-serif;
     color: #1d3557;

@@ -147,7 +147,7 @@ body {
 
 /* Forme haut gauche */
 
-body::before {
+/* body::before {
     content: "";
     position: fixed;
 
@@ -166,9 +166,10 @@ body::before {
     border-radius: 0 0 70% 0;
     z-index: -1;
 }
+*/
 
 
-body::after {
+/* body::after {
     content: "";
     position: fixed;
 
@@ -187,6 +188,7 @@ body::after {
     border-radius: 70% 0 0 0;
     z-index: -1;
 }
+*/
 
 
 .container {
